@@ -1,0 +1,77 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.main{
+    width: 100%;
+    max-width: 900px;
+    /* background-color: aqua; */
+
+    margin: 0 auto; /* 是針對塊級元素的置中*/
+
+    /* margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto; */
+}
+.main>header{
+    text-align: center;
+    padding-top: 40;
+    padding-bottom: 40;
+    /* background-color: aquamarine; */
+}
+.main>header img.logo{ 
+    width: 200px;
+    /* display: block;
+    margin: 0 auto; */
+}
+/* img.logo{
+    width: 200px;
+} */
+ .main>nav{
+    /* background-color: aquamarine; */
+    border-top: 1px solid #8a8000;
+    border-bottom: 1px solid #8a8000;
+    margin-bottom: 40px;
+ }
+ .main>nav>ul>li{
+    display: inline-block;
+    width: 33.3%;
+    /* background-color: red; */
+    margin-right: -4px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: bold;
+ }
+
+ .main>nav>ul>li>a{
+    color: #000;
+    text-decoration: none;
+    /* background-color: red; */
+    display: block;
+}
+/* 權重優先順序：在元素後面標註!important >>>>>> 有動作行為的 > 指定分割區塊的目的 */
+.main>nav>ul>li>a:hover{
+    background-color: #dcdddd;
+}
+/* 先下定義、指定到列表項目後以空格表示後代方式來進行格式覆蓋 預留未來包結構時的彈性避免混亂*/
+.main>nav>ul>li .text_en{
+    color: #8a8000;
+}
+
+.main>content img{
+    width: 100%;
+}
