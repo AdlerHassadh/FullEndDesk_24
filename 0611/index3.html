@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            background-color: coral;
+            margin-right: -20px;
+            /* margin-top: 20px;
+                ^^^ It doesn't apply within the inline element column, better known as span*/
+        }
+        .box2{
+            margin-top: 20px;
+            margin-left: 35px;
+            background-color: aqua;    
+        }
+        .box3{
+            background-color: rgb(181, 28, 145);
+            margin-bottom: 20px;
+        }
+        .box4{
+            background-color: rgb(26, 61, 174);
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 2px solid red;
+            border-bottom: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <span class="box1">box1</span>
+    <span class="box2">box2</span>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
